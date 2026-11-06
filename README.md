@@ -59,7 +59,8 @@ cp .env.example .env
 Edit `.env` with your Supabase credentials:
 ```
 VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key-here
+VITE_SUPABASE_PUBLISHABLE_KEY=your-publishable-key-here
+# Or VITE_SUPABASE_ANON_KEY=your-anon-key-here
 ```
 Find these in **Supabase Dashboard > Settings > API**.
 
@@ -167,7 +168,7 @@ export const siteConfig = {
 2. Import in [Vercel](https://vercel.com)
 3. Add environment variables:
    - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
+   - `VITE_SUPABASE_PUBLISHABLE_KEY` (or `VITE_SUPABASE_ANON_KEY`)
 4. Deploy
 
 ### Supabase (Backend)
